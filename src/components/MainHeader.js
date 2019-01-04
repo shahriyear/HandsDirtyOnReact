@@ -1,1 +1,1 @@
-import React from "react"const MainHeader = (p) => {    return(        <div>            <h1 className="header">This is Main Header Section!</h1>           <p>{p.title}</p>        </div>    )}export default MainHeader
+import React,{Component} from "react"class MainHeader extends Component{    render() {        return(            <div>                <h1 className="header">This is Main Header Section!</h1>                <p>{this.props.title}</p>            </div>        )    }}export default MainHeader
