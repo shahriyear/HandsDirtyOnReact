@@ -1,0 +1,1 @@
+import React from "react"const Jokes = ( props ) => {    return(        <div style={{ borderBottom:"1px solid #fff" }}>            <h2 style={{display: !props.question && "none" }}>No. {props.index+1} Question : { props.question} </h2>            <h3> Answer : { props.answer} </h3>        </div>    )}export default Jokes

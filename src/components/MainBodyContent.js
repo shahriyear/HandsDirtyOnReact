@@ -1,0 +1,1 @@
+import React from "react"const MainBodyContent = (props) => {    return(    <div>        <h2>MainBodyContent here!!</h2>        <p>{props.dataObj.title}</p>        <p>{props.dataObj.content}</p>    </div>    )}export default MainBodyContent

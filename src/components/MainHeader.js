@@ -1,0 +1,1 @@
+import React from "react"const MainHeader = (p) => {    return(        <div>            <h1 className="header">This is Main Header Section!</h1>           <p>{p.title}</p>        </div>    )}export default MainHeader

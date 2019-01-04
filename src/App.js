@@ -1,28 +1,1 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
-
-export default App;
+import React from "react"import MainHeader from "./components/MainHeader";import MainBodyContent from "./components/MainBodyContent";import MainFooter from "./components/MainFooter";import Jokes from "./components/JokesPart";import JokesData from "./Data";import './style.css'const App = () => {        const jokesData = JokesData.map(( data,index )=>{        return  <Jokes index={index} key={data.id} question={data.question} answer={data.punchLine}/>    })    return(        <div>            <MainHeader title="Dyanmic Title is Here!!"/>            <MainBodyContent dataObj={{ title: "Body!",content:"here goes some data!"}}/>            {/*jokes*/}            <div style={{ backgroundColor:"#f2f2f2 "}}>{jokesData}</div>            <MainFooter/>        </div>    )}export default App
